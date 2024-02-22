@@ -2,6 +2,11 @@
 1. var , let , const 
 2. default parameter
 3. template string
+4. Arrow function
+5. destructuring and spread operator
+6. Object.keys, Object.values, Object.entries.
+7. (for -- of) loop use in array and string.
+8. (for -- in) loop use in object.
 */
 
 /* ---let and const ---ey 2 take bole block scope 
