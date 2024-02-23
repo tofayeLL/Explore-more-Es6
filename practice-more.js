@@ -23,6 +23,9 @@ console.log(evenArray);
 
 
 /* ------------------------------------------- */
+
+
+
 /* ----practice problem -- by use filter() and find()-- */
 // problem is divisible by 10
 // by use filter()
@@ -37,3 +40,19 @@ console.log(divisible1);
 // by use map()
 const divisible2 = array.map( n => n % 10 === 0 );
 console.log(divisible2);
+
+
+/* -------------------------------------------------------- */
+
+/* ------practice problem --- by use filter() -- */
+// find instructor who is senior from the array of object
+const instructor = [
+    {name:'nodi', age: '35', position: 'senior'},
+    {name:'akhi', age: '27', position: 'junior'},
+    {name:'pakhi', age: '31', position: 'senior'},
+
+];
+
+const senior = instructor.filter(instructor => instructor.position === 'senior');
+console.log(senior);
+
