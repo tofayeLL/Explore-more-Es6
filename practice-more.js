@@ -77,3 +77,34 @@ const result = instructors.filter(instructor => instructor.position === 'senior'
 /* -------------------------------------------------------- */
 
 
+/* -----practice problem ---by use for loop and reduce() --*/
+// show the sum of the total price from an array of object
+
+const peoples = [
+    {name: 'mena', age: 20},
+    {name: 'rena', age: 15},
+    {name: 'moriowm', age: 22}
+]
+
+// by use for loop
+const getTotalSum = (peoples) => {
+    let sum = 0;
+   for(const people of peoples){
+    const peopleAge = people.age;
+     sum = sum + peopleAge;
+    
+   }
+   return sum;
+   
+}
+
+const sumOfAge = getTotalSum(peoples);
+// console.log(sumOfAge);
+
+
+
+
+// by use reduce
+const ageSum = peoples.reduce((accumulator, current) => accumulator + current.age,0);
+console.log(ageSum);
+
