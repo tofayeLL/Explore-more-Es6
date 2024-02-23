@@ -34,25 +34,46 @@ const divisible = array.filter( n => n % 10 === 0);
 console.log(divisible);
 
 // by use find()
-const divisible1 = array.find( n => n % 10 === 0 );
-console.log(divisible1);
+/* const divisible1 = array.find( n => n % 10 === 0 );
+console.log(divisible1); */
 
 // by use map()
-const divisible2 = array.map( n => n % 10 === 0 );
-console.log(divisible2);
+/* const divisible2 = array.map( n => n % 10 === 0 );
+console.log(divisible2); */
 
 
 /* -------------------------------------------------------- */
 
 /* ------practice problem --- by use filter() -- */
 // find instructor who is senior from the array of object
-const instructor = [
+const instructors = [
     {name:'nodi', age: '35', position: 'senior'},
     {name:'akhi', age: '27', position: 'junior'},
     {name:'pakhi', age: '31', position: 'senior'},
 
 ];
 
-const senior = instructor.filter(instructor => instructor.position === 'senior');
+// full object show output
+const arr = [];
+const senior = instructors.filter(instructor => instructor.position === 'senior');
 console.log(senior);
+
+/* //only name will show in the output
+const arr = [];
+const senior = instructors.filter(instructor => {  
+    if(instructor.position === 'senior'){
+        arr.push(instructor.name);    
+    } 
+    
+});
+console.log(arr); */
+
+
+// another way to show name output
+const result = instructors.filter(instructor => instructor.position === 'senior').map(n => n.name);
+// console.log(result);
+
+
+/* -------------------------------------------------------- */
+
 
